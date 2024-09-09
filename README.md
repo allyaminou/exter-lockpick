@@ -58,7 +58,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
             TriggerServerEvent('qb-vehiclekeys:server:breakLockpick', 'lockpick')
         end
     end
-end)
+    end)
 
 and replace with this code
 
