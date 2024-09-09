@@ -91,7 +91,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
             AttemptPoliceAlert("steal")
         end
     end, vehicle, isAdvanced and 'advanced' or 'normal')  -- Adjust parameters as needed
-end)
+    end)
 
 to make game shorter / faster adjust the time from the OpenDevice function in client.lua
 see below example for time adjustment
