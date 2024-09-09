@@ -1,21 +1,22 @@
 # exter-lockpick
 EXTER-LOCKPICK TAKES INSPIRATION FROM ONE OF THE ROLEPLAY SERVERS, NOPIXEL 4.0
 
--- qb-vehiclekeys usage
+qb-vehiclekeys usage
 
--- STEP 1 : DELETED qb-lockpick
--- STEP 2 : FOLLOW THESE INSTRUCTIONS
+STEP 1 : DELETED qb-lockpick
+
+STEP 2 : FOLLOW THESE INSTRUCTIONS
 
 
--- search this in qb-vehiclekeys/client/main.lua
+search this in qb-vehiclekeys/client/main.lua
 
--- for old repository qb-vehiclekeys
+for old repository qb-vehiclekeys
 
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     LockpickDoor(isAdvanced)
 end)
 
--- for new repository qb-vehiclekeys
+for new repository qb-vehiclekeys
 
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     local ped = PlayerPedId()
@@ -57,7 +58,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     end
 end)
 
--- and replace with this code
+and replace with this code
 
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     local ped = PlayerPedId()
@@ -90,8 +91,8 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     end, vehicle, isAdvanced and 'advanced' or 'normal')  -- Adjust parameters as needed
 end)
 
--- to make game shorter / faster adjust the time from the OpenDevice function in client.lua
--- see below example for time adjustment
+to make game shorter / faster adjust the time from the OpenDevice function in client.lua
+see below example for time adjustment
 
 function OpenDevice(successCallback, target, time)
     SetNuiFocus(true, true)
@@ -101,5 +102,5 @@ function OpenDevice(successCallback, target, time)
 
 
 
--- ORIGINAL REPOSITORY
+ORIGINAL REPOSITORY
 ( https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0 )
